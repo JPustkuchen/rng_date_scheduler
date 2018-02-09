@@ -59,6 +59,7 @@ class RouteSubscriber extends RouteSubscriberBase {
         ];
         $options = [];
         $options['parameters'][$entity_type]['type'] = 'entity:' . $entity_type;
+        $options['_admin_route'] = TRUE;
 
         $route = new Route(
           $canonical_path . '/event/dates',
